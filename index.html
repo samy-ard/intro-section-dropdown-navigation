@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="row space-between">
+        <div class="col col-auto">
+          <a href="#" class="logo-url" title="Logo">
+            <img class="logo" src="./images/logo.svg" alt="Logo">
+          </a>
+        </div>
+        <div class="col col-auto col-lg">
+          <button type="button" class="btn btn-menu">
+            <img class="menu-icon" src="./images/icon-menu.svg" alt="Menu Icon"/>
+          </button>
+          <nav class="navigation">
+            <button type="button" class="btn btn-menu">
+              <img class="menu-icon" src="./images/icon-close-menu.svg" alt="Menu Icon"/>
+            </button>
+            <ul class="menu">
+              <li class="menu-item">
+                <a href="#" class="menu-item-link dropdown-toggle" title="Features">Features</a>
+                <div class="dropdown-menu dropdown-icon-menu">
+                  <a class="dropdown-item" href="#"><img class="dropdown-icon" src="./images/icon-todo.svg" alt="Todo List"/> Todo List</a>
+                  <a class="dropdown-item" href="#"><img class="dropdown-icon" src="./images/icon-calendar.svg" alt="Calendar"/> Calendar</a>
+                  <a class="dropdown-item" href="#"><img class="dropdown-icon" src="./images/icon-reminders.svg" alt="Calendar"/> Reminders</a>
+                  <a class="dropdown-item" href="#"><img class="dropdown-icon" src="./images/icon-planning.svg" alt="Planning"/> Planning</a>
+                </div>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-item-link dropdown-toggle" title="Company">Company</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">History</a>
+                  <a class="dropdown-item" href="#">Our Team</a>
+                  <a class="dropdown-item" href="#">Blog</a>
+                </div>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-item-link" title="Careers">Careers</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-item-link" title="About">About</a>
+              </li>
+            </ul>
+            <div class="btn-group">
+              <a href="#" class="btn btn-secondary fs-sm" title="Login">Login</a>
+              <a href="#" class="btn btn-outline-primary fs-sm" title="Register">Register</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="container-alt">
+        <div class="row">
+          <div class="col col-12 px-0 order-lg-2 col-lg-auto">
+            <img class="hero-image d-lg-none" src="./images/image-hero-mobile.png" alt="Hero">
+            <img class="hero-image d-none d-lg-block" width="480" src="./images/image-hero-desktop.png" alt="Hero">
+          </div>
+          <div class="col col-12 order-lg-1 col-lg">
+            <div class="hero-text">
+              <h1 class="hero-title">Make remote work</h1>
+              <p class="hero-desc">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+              <a href="#" class="btn btn-primary mx-auto btn-hero" title="Learn more">Learn more</a>
+              <div class="clients">
+                <div class="container px-lg-0">
+                  <div class="row align-center space-between space-start-lg mx-0">
+                    <img class="client-img" src="./images/client-databiz.svg" alt="Client"/>
+                    <img class="client-img" src="./images/client-audiophile.svg" alt="Client"/>
+                    <img class="client-img" src="./images/client-meet.svg" alt="Client"/>
+                    <img class="client-img" src="./images/client-maker.svg" alt="Client"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="modal">
+    <nav class="navigation">
+      <button type="button" class="btn btn-menu">
+        <img class="menu-icon" src="./images/icon-close-menu.svg" alt="Menu Icon"/>
+      </button>
+      <ul class="menu">
+        <li class="menu-item">
+          <a href="#" class="menu-item-link dropdown-toggle" title="Features">Features</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#"><img class="dropdown-icon" src="./images/icon-todo.svg" alt="Todo List"/> Todo List</a>
+            <a class="dropdown-item" href="#"><img class="dropdown-icon" src="./images/icon-calendar.svg" alt="Calendar"/> Calendar</a>
+            <a class="dropdown-item" href="#"><img class="dropdown-icon" src="./images/icon-reminders.svg" alt="Calendar"/> Reminders</a>
+            <a class="dropdown-item" href="#"><img class="dropdown-icon" src="./images/icon-planning.svg" alt="Planning"/> Planning</a>
+          </div>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-item-link dropdown-toggle" title="Company">Company</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">History</a>
+            <a class="dropdown-item" href="#">Our Team</a>
+            <a class="dropdown-item" href="#">Blog</a>
+          </div>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-item-link" title="Careers">Careers</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-item-link" title="About">About</a>
+        </li>
+      </ul>
+      <a href="#" class="btn btn-secondary w-100 fs-sm" title="Login">Login</a>
+      <a href="#" class="btn btn-outline-primary w-100 fs-sm" title="Register">Register</a>
+    </nav>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
